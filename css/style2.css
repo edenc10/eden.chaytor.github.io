@@ -1,0 +1,134 @@
+#wrapper{ 
+              display: grid;
+              grid-template-areas:
+                  "header header header"
+"innergrid1 innergrid1 innergrid1"
+                  "nav nav nav"
+"innergrid2 innergrid2 innergrid2"
+                "innergrid4 innergrid4 innergrid4"
+                  "content content content"
+                  "innergrid3 innergrid3 innergrid3"
+ "footer footer footer"
+              }
+ #header, #nav, #content,#footer, #home, #aboutme, #culture, #academic, #copy, #header1, #description, #innergrid3, #contact, #email, #end, innergrid4, #description2{
+    border: 1px solid;}
+
+
+#header{
+    grid-area: header;
+    text-align: center;
+    background-color: #6675A0;
+}
+
+ #nav{
+     grid-area: nav;
+    text-align: center;
+    background-color: #B5C1DF;
+}
+#home{
+    grid-area: home;
+    background-color: #667191;
+    text-align: center;
+}
+#aboutme{
+    grid-area: aboutme;
+    background-color: #667191;
+    text-align: center
+}
+#culture{
+    grid-area: culture;
+    background-color: #667191;
+    text-align: center
+}
+#academic{
+    grid-area: academic;
+    background-color: #667191;
+    text-align: center
+}
+
+
+ #innergrid1{
+display: grid;
+    grid-area: innergrid1;
+    background-color: #B5C1DF;
+    text-align: center;
+    grid-template-areas: "home aboutme academic culture";
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    grid-row-gap: 10px;      
+}
+
+
+#content{
+    grid-area: content;
+    background-color: #F5E2C8;
+}
+
+#innergrid2{
+display: grid;
+    grid-area: innergrid2;
+    background-color: #F5E2C8;
+    text-align: center;
+    grid-template-areas: "description blank1 image blank2 image1";
+    padding-left: 30px;
+    padding-right: 30px;
+     padding-top: 10px;
+    padding-bottom: 
+}
+
+#innergrid4{
+display: grid;
+    grid-area: innergrid4;
+    background-color: #F5E2C8;
+     text-align: center;
+      grid-template-areas: "desciption2 blank3 blank4 blank5 image2";
+    padding-left: 50px;
+    padding-right: 30px;
+     padding-top: 30px;
+    padding-bottom: 30px
+}
+#description{
+    text-align: center
+}
+#info{
+    text-align: left
+}
+#footer{
+
+    grid-area: footer;
+    background-color: #B5C1DF
+}
+    
+#innergrid3{
+display: grid;
+    grid-area: innergrid3;
+    background-color: #B5C1DF;
+    text-align: center;
+    grid-template-areas: "contact email end";
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    grid-row-gap: 10px;             
+    }
+#contact{
+    grid-area: contact;
+    background-color: #FFFFFF;
+    text-align: left;
+}
+#email{
+    grid-area: email;
+    background-color: #FFFFFF;
+    text-align: left;
+}
+#end{
+    grid-area: end;
+    background-color: #FFFFFF;
+    text-align: left;
+}
+
+
+   
+
